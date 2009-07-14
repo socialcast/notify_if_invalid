@@ -1,14 +1,13 @@
-NotifyIfInvalid
-===============
+= notify_if_invalid
 
 Record an exception in HopToad if your model object is invalid.
 
-Usage
-=======
+== Usage
 
   class User < ActiveRecord::Base
     notify_if_invalid
   end
 
+== Copyright
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Ryan Sonnek. See LICENSE for details.

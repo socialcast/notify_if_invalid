@@ -1,3 +1,10 @@
 require 'rubygems'
-require 'active_support'
-require 'active_support/test_case'
+require 'test/unit'
+require 'shoulda'
+
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'notify_if_invalid'
+
+class Test::Unit::TestCase
+end
