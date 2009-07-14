@@ -22,17 +22,8 @@ module NotifyIfInvalid
     def check_if_invalid
       return if self.errors.empty?
       message = "#{self.class.to_s} #{self.errors.full_messages.to_sentence}: #{self.inspect}"
-      if Exceptional.enabled?
-        begin
-          Exceptional.rescue do
-            raise ValidationError.new message
-          end
-        rescue => err
-          logger.warn(err)
-        end
-      else
-        logger.warn message
-      end
+      error = ValidationError.new message
+      HoptoadNotifier.notify error
     end
   end
 end
