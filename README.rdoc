@@ -8,6 +8,16 @@ Record an exception in HopToad if your model object is invalid.
     notify_if_invalid
   end
 
+= Installation
+
+Command line installation
+
+  sudo gem install wireframe-notify_if_invalid
+
+Rails environment.rb configuration
+
+  config.gem 'wireframe-notify_if_invalid', :source => 'http://gems.github.com', :lib => 'notify_if_invalid'
+
 == Copyright
 
 Copyright (c) 2009 Ryan Sonnek. See LICENSE for details.
