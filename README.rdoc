@@ -6,6 +6,9 @@ Record an exception in HopToad if your model object is invalid.
 
   class User < ActiveRecord::Base
     notify_if_invalid
+
+    #validations for the object
+    validates_precense_of :name
   end
 
 = Installation
