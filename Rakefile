@@ -9,9 +9,11 @@ begin
     gem.email = "ryan@socialcast.com"
     gem.homepage = "http://github.com/wireframe/notify_if_invalid"
     gem.authors = ["Ryan Sonnek"]
+    gem.add_runtime_dependency "hoptoad_notifier", ">= 2.3"
+    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
-
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
