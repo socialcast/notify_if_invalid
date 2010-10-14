@@ -23,7 +23,7 @@ module NotifyIfInvalid
       return if self.errors.empty?
       message = "#{self.class.to_s} #{self.errors.full_messages.to_sentence}: #{self.inspect}"
       error = ValidationError.new message
-      HoptoadNotifier.notify error
+      HoptoadNotifier.notify_or_ignore error
     end
   end
 end
