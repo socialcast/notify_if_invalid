@@ -31,5 +31,5 @@ see CONTRIBUTORS.txt for complete list of contributors.
 
 ## Copyright
 
-Copyright (c) 2009 Socialcast Inc. 
-See LICENSE for details.
+Copyright (c) 2011 Socialcast Inc. 
+See LICENSE.txt for details.
