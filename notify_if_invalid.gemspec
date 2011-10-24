@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.date = %q{2011-11-24}
   s.email = %q{ryan@socialcast.com}
   s.extra_rdoc_files = [
-    "LICENSE",
-     "README.rdoc"
+    "LICENSE.txt",
+     "README.md"
   ]
   s.files = [
     ".gitignore",
