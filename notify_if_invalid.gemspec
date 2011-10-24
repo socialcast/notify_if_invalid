@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".gitignore",
-     "LICENSE",
-     "README.rdoc",
+     "LICENSE.txt",
+     "README.md",
      "Rakefile",
      "VERSION.yml",
      "lib/notify_if_invalid.rb",
