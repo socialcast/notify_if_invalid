@@ -1,5 +1,5 @@
 Ryan Sonnek - Original Author
-
+Geoffrey Hichborn - Updated to use Airbrake
 
 Complete list of contributors:
 https://github.com/socialcast/notify_if_invalid/contributors
