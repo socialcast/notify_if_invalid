@@ -1,0 +1,5 @@
+rvm use default@notify_if_invalid --create
+if ! command -v bundle ; then
+  gem install bundler
+  bundle install --local
+fi

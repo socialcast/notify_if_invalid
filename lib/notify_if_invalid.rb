@@ -1,15 +1,17 @@
+require "notify_if_invalid/version"
+
 class ValidationError < StandardError
 end
 
 module NotifyIfInvalid
   def self.included(base)
-    base.extend ClassMethods  
+    base.extend ClassMethods
   end
 
   module ClassMethods
     def notify_if_invalid
       after_validation :check_if_invalid
-      
+
       include InstanceMethods
       extend SingletonMethods
     end
@@ -27,4 +29,5 @@ module NotifyIfInvalid
     end
   end
 end
+
 ActiveRecord::Base.send(:include, NotifyIfInvalid)
