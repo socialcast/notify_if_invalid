@@ -25,7 +25,8 @@ module NotifyIfInvalid
       return if self.errors.empty?
       message = "#{self.class.to_s} #{self.errors.full_messages.to_sentence}: #{self.inspect}"
       error = ValidationError.new message
-      Airbrake.notify_or_ignore error
+      ::Airbrake.notify_or_ignore(error) if defined?(::Airbrake)
+      ::Honeybadger.notify_or_ignore(error) if defined?(::Honeybadger)
     end
   end
 end
