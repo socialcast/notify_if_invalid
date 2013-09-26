@@ -1,8 +1,9 @@
 # notify_if_invalid
 
-Record an exception in HopToad if your model object is invalid.
+Record an exception in Airbrake or Honeybadger if your model object is invalid.
 
 ## Usage
+You can use either airbrake or honeybadger gems. Just require them in your Gemfile and the error will go.
 
 ```ruby
 class User < ActiveRecord::Base
@@ -31,5 +32,5 @@ see CONTRIBUTORS.txt for complete list of contributors.
 
 ## Copyright
 
-Copyright (c) 2011 Socialcast Inc. 
+Copyright (c) 2011 Socialcast Inc.
 See LICENSE.txt for details.
