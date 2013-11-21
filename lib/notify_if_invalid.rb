@@ -1,15 +1,18 @@
+require 'active_record'
+require 'airbrake'
+
 class ValidationError < StandardError
 end
 
 module NotifyIfInvalid
   def self.included(base)
-    base.extend ClassMethods  
+    base.extend ClassMethods
   end
 
   module ClassMethods
     def notify_if_invalid
       after_validation :check_if_invalid
-      
+
       include InstanceMethods
       extend SingletonMethods
     end
